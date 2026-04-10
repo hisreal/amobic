@@ -1,0 +1,177 @@
+
+    <!-- FOOTER SECTION START -->
+<footer class="ul-footer amobic-footer">
+    <div class="ul-footer-top">
+        <div class="ul-container">
+            <div class="ul-footer-top-wrapper wow animate__fadeInUp">
+                <div class="row ul-bs-row gy-5">
+
+                    <!-- Brand Column -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="ul-footer-about amobic-footer-brand">
+                            <a href="index.html" class="amobic-footer-logo">
+                                <img width="210" src="assets/img/logo/amobic-logo-white-full.png" alt="Amobic logo">
+                            </a>
+
+                            <p class="ul-footer-about-txt">
+                                Thoughtfully curated Cape Town stays designed for comfort, calm, and memorable experiences. Whether you are visiting for business or leisure, Amobic helps you feel at home in the city’s most desirable locations.
+                            </p>
+
+                            <div class="amobic-footer-badges">
+                                <span>Prime Locations</span>
+                                <span>Refined Interiors</span>
+                                <span>Professional Management</span>
+                            </div>
+
+                            <div class="ul-footer-socials amobic-footer-socials">
+                                <a href="#" aria-label="Facebook"><i class="flaticon-facebook"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="flaticon-instagram"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="flaticon-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="flaticon-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <div class="single-column">
+                            <div class="ul-footer-widget">
+                                <h3 class="ul-footer-widget-title">Quick Links</h3>
+                                <div class="ul-footer-widget-links">
+                                    <a href="index.html">Home</a>
+                                    <a href="about.html">About Us</a>
+                                    <a href="properties.html">Browse Properties</a>
+                                    <a href="partners.html">Become a Partner</a>
+                                    <a href="contact.html">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stay Options -->
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <div class="single-column">
+                            <div class="ul-footer-widget">
+                                <h3 class="ul-footer-widget-title">Stay Options</h3>
+                                <div class="ul-footer-widget-links">
+                                    <a href="#">Short Stays</a>
+                                    <a href="#">Family Homes</a>
+                                    <a href="#">Luxury Apartments</a>
+                                    <a href="#">Business Travel</a>
+                                    <a href="#">Extended Stays</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-column">
+                            <div class="ul-footer-widget">
+                                <h3 class="ul-footer-widget-title">Get in Touch</h3>
+
+                                <div class="amobic-footer-contact">
+                                    <a href="mailto:hello@amobic.com">
+                                        <span><i class="bi bi-envelope"></i></span>
+                                        hello@amobic.com
+                                    </a>
+
+                                    <a href="tel:+270000000000">
+                                        <span><i class="bi bi-telephone"></i></span>
+                                        +27 00 000 0000
+                                    </a>
+
+                                    <div class="amobic-footer-contact-text">
+                                        <span><i class="bi bi-geo-alt"></i></span>
+                                        Cape Town, South Africa
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ul-footer-widget amobic-newsletter-widget">
+                                <h3 class="ul-footer-widget-title">Stay in the Loop</h3>
+                                <p class="amobic-newsletter-text">
+                                    Get updates on new properties, featured stays, and exclusive offers.
+                                </p>
+
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Premium middle strip -->
+                <div class="amobic-footer-middle">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="amobic-footer-feature">
+                                <div class="icon"><i class="bi bi-house-heart"></i></div>
+                                <div>
+                                    <h4>Curated Homes</h4>
+                                    <p>Every space is selected and styled for quality, comfort, and atmosphere.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="amobic-footer-feature">
+                                <div class="icon"><i class="bi bi-shield-check"></i></div>
+                                <div>
+                                    <h4>Trusted Management</h4>
+                                    <p>Professional oversight that protects guest experience and owner performance.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-12">
+                            <div class="amobic-footer-feature">
+                                <div class="icon"><i class="bi bi-stars"></i></div>
+                                <div>
+                                    <h4>Seamless Stay Experience</h4>
+                                    <p>Simple discovery, effortless booking, and smooth support from start to finish.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer bottom -->
+    <div class="ul-footer-bottom amobic-footer-bottom">
+        <div class="ul-container">
+            <div class="amobic-footer-bottom-wrap">
+                <p class="copyright-txt">
+                    &copy; 2026 Amobic. All rights reserved.
+                </p>
+
+                <div class="amobic-footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER SECTION END -->
+    <!-- libraries JS -->
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+    <script src="assets/vendor/animate-wow/wow.min.js"></script>
+    <script src="assets/vendor/splittype/index.min.js"></script>
+    <script src="assets/vendor/mixitup/mixitup.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+
+    <!-- custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tab.js"></script>
+</body>
+
+</html>
