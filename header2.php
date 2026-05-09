@@ -155,46 +155,4 @@
     </div>
     <!-- SEARCH MODAL SECTION END -->
 
-    <!-- HEADER SECTION START -->
-    <header class="ul-header ul-header--home">
-        <div class="ul-header-bottom">
-            <div class="ul-header-bottom-wrapper">
-                <!-- header left -->
-                <div class="header-bottom-left">
-                    <div class="logo-container">
-                        <a href="index.html" class="d-inline-block"><img src="assets/img/logo/amobic-logo-white-full.png" alt="logo" class="logo"></a>
-                    </div>
-                </div>
-
-                <!-- header nav -->
-                <div class="ul-header-nav-wrapper">
-                    <div class="to-go-to-sidebar-in-mobile">
-                        <nav class="ul-header-nav">
-                            <a href="index.php">Home</a>
-                             <a href="">Experiences</a>
-                           
-                            <a href="about.php">For Landlords</a>
-                             <a href="">About</a>
-                              <a href="">FAQs</a>
-                               <a href="">Contact</a>
-                        </nav>
-                    </div>
-                </div>
-
-                <!-- actions -->
-                <div class="ul-header-actions">                  
-                     <a href="signup.php" class="add-property-btn d-xxs-none"><i class="flaticon-user"></i> Sign Up</a>
-                    <a href="#" class="add-property-btn d-xxs-none"><i class="flaticon-home"></i> Add Property</a>
-                    <button class="ul-header-sidebar-opener d-lg-none">
-                        <i class="flaticon-menu-button"></i>
-                    </button>              
-              </div>
-
-                <!-- sidebar opener -->
-                <div class="d-none">
-                    <button class="ul-header-sidebar-opener"><i class="flaticon-menu-button"></i></button>
-                </div>
-            </div>
-        </div>
-    </header>
     <!-- HEADER SECTION END -->

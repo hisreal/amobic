@@ -358,7 +358,7 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(112, 101, 240, 0.85);
+  background: #6B7F4A ;
   z-index: -1;
 }
 .ul-breadcrumb-title {
@@ -6317,4 +6317,468 @@ background: linear-gradient(
 
 .amobic-newsletter-form button:hover i {
   transform: translateX(3px);
+}
+
+:root {
+  --amobic-primary: #6B7F4A;
+  --amobic-primary-dark: #55663a;
+  --amobic-black: #111111;
+  --amobic-gray: #6C6E76;
+  --amobic-light: #f8faf6;
+  --amobic-border: #dddddd;
+  --amobic-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Varela Round", Arial, sans-serif;
+  background: var(--amobic-white);
+  color: var(--amobic-black);
+}
+
+.amobic-auth-section {
+  min-height: 100vh;
+  background: var(--amobic-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.amobic-auth-card {
+  width: 100%;
+  max-width: 460px;
+  background: var(--amobic-white);
+  border: 1px solid var(--amobic-border);
+  border-radius: 22px;
+  padding: 32px;
+}
+
+.amobic-auth-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.amobic-auth-logo {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.amobic-auth-logo img {
+  width: 155px;
+}
+
+.amobic-auth-header h1,
+.amobic-auth-card h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--amobic-black);
+  margin-bottom: 8px;
+}
+
+.amobic-auth-header p {
+  color: var(--amobic-gray);
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.amobic-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.amobic-auth-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--amobic-black);
+  margin-bottom: 8px;
+}
+
+.amobic-auth-group input,
+.amobic-password-field input {
+  width: 100%;
+  height: 54px;
+  border: 1px solid #b0b0b0;
+  border-radius: 12px;
+  padding: 0 16px;
+  font-size: 15px;
+  color: var(--amobic-black);
+  background: var(--amobic-white);
+}
+
+.amobic-auth-group input:focus,
+.amobic-password-field input:focus,
+.amobic-code-inputs input:focus {
+  outline: none;
+  border-color: var(--amobic-black);
+  box-shadow: 0 0 0 3px rgba(107, 127, 74, 0.14);
+}
+
+.amobic-auth-primary-btn {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 12px;
+  background: var(--amobic-primary);
+  color: var(--amobic-white);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease;
+}
+
+.amobic-auth-primary-btn:hover {
+  background: var(--amobic-primary-dark);
+  color: var(--amobic-white);
+}
+
+.amobic-auth-outline-btn {
+  width: 100%;
+  height: 52px;
+  border: 1px solid var(--amobic-black);
+  border-radius: 12px;
+  background: var(--amobic-white);
+  color: var(--amobic-black);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease;
+}
+
+.amobic-auth-outline-btn:hover {
+  background: var(--amobic-light);
+  color: var(--amobic-black);
+}
+
+.amobic-auth-divider {
+  position: relative;
+  text-align: center;
+  margin: 26px 0;
+}
+
+.amobic-auth-divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background: var(--amobic-border);
+}
+
+.amobic-auth-divider span {
+  position: relative;
+  background: var(--amobic-white);
+  padding: 0 14px;
+  color: var(--amobic-gray);
+  font-size: 13px;
+}
+
+.amobic-social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.amobic-social-login button {
+  width: 100%;
+  height: 52px;
+  border: 1px solid var(--amobic-black);
+  border-radius: 12px;
+  background: var(--amobic-white);
+  color: var(--amobic-black);
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  transition: 0.25s ease;
+}
+
+.amobic-social-login button:hover {
+  background: var(--amobic-light);
+}
+
+.amobic-social-login i {
+  font-size: 18px;
+}
+
+.amobic-auth-policy {
+  margin-top: 24px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--amobic-gray);
+  text-align: center;
+}
+
+.amobic-auth-policy a {
+  color: var(--amobic-black);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.amobic-code-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.amobic-code-inputs input {
+  width: 48px;
+  height: 56px;
+  flex: 0 0 48px;
+  border: 1px solid #b0b0b0;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--amobic-black);
+}
+
+@media (max-width: 420px) {
+  .amobic-code-inputs {
+    gap: 6px;
+    max-width: 100%;
+  }
+
+  .amobic-code-inputs input {
+    width: 42px;
+    height: 48px;
+    flex-basis: 42px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .amobic-code-inputs {
+    gap: 5px;
+  }
+
+  .amobic-code-inputs input {
+    width: 38px;
+    height: 46px;
+    flex-basis: 38px;
+  }
+}
+
+.amobic-password-field {
+  position: relative;
+}
+
+.amobic-password-field input {
+  padding-right: 52px;
+}
+
+.amobic-password-field button {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: var(--amobic-gray);
+  font-size: 18px;
+  padding: 0;
+}
+
+.amobic-success-icon {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--amobic-primary);
+  color: var(--amobic-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  margin-bottom: 26px;
+}
+
+.amobic-auth-success-text {
+  color: var(--amobic-gray);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.amobic-welcome-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 575px) {
+  .amobic-auth-section {
+    align-items: flex-start;
+    padding: 24px 18px;
+  }
+
+  .amobic-auth-card {
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 20px 0;
+  }
+
+  .amobic-auth-logo img {
+    width: 145px;
+  }
+}
+
+.amobic-code-inputs input {
+  min-width: 0;
+  padding: 0;
+}
+.amobic-auth-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.amobic-auth-group select,
+.amobic-auth-group input[type="date"] {
+  width: 100%;
+  height: 54px;
+  border: 1px solid #b0b0b0;
+  border-radius: 12px;
+  padding: 0 16px;
+  font-size: 15px;
+  color: var(--amobic-black);
+  background: var(--amobic-white);
+}
+
+.amobic-auth-group select:focus,
+.amobic-auth-group input[type="date"]:focus {
+  outline: none;
+  border-color: var(--amobic-black);
+  box-shadow: 0 0 0 3px rgba(107, 127, 74, 0.14);
+}
+
+@media (max-width: 575px) {
+  .amobic-auth-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.amobic-partner-card {
+  max-width: 620px;
+}
+
+.amobic-auth-group textarea {
+  width: 100%;
+  min-height: 120px;
+  border: 1px solid #b0b0b0;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 15px;
+  color: var(--amobic-black);
+  background: var(--amobic-white);
+  resize: vertical;
+}
+
+.amobic-auth-group textarea:focus {
+  outline: none;
+  border-color: var(--amobic-black);
+  box-shadow: 0 0 0 3px rgba(107, 127, 74, 0.14);
+}
+
+.amobic-image-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.amobic-preview-item {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  height: 130px;
+  background: #f8faf6;
+}
+
+.amobic-preview-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.amobic-remove-image {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(17, 17, 17, 0.75);
+  color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amobic-remove-image:hover {
+  background: #111111;
+}
+
+@media (max-width: 575px) {
+  .amobic-image-preview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .amobic-preview-item {
+    height: 110px;
+  }
+}
+
+.amobic-next-steps {
+  margin: 30px 0;
+  display: grid;
+  gap: 14px;
+}
+
+.amobic-step-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid #eeeeee;
+  border-radius: 14px;
+  text-align: left;
+}
+
+.amobic-step-item span {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--amobic-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.amobic-step-item p {
+  margin: 0;
+  color: var(--amobic-black);
+  font-weight: 600;
 }
