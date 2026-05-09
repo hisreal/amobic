@@ -177,7 +177,7 @@
                              <a href="">About</a>
                               <a href="">FAQs</a>
                                <a href="">Contact</a>
-                                <a href="">Sign up</a>
+                                <a href="signup.php">Sign up</a>
                                  <a href="">List Your Property</a>
                         </nav>
                     </div>
