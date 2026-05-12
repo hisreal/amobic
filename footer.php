@@ -38,11 +38,11 @@
                             <div class="ul-footer-widget">
                                 <h3 class="ul-footer-widget-title">Quick Links</h3>
                                 <div class="ul-footer-widget-links">
-                                    <a href="index.html">Home</a>
-                                    <a href="about.html">About Us</a>
-                                    <a href="properties.html">Browse Properties</a>
-                                    <a href="partners.html">Become a Partner</a>
-                                    <a href="contact.html">Contact</a>
+                                    <a href="index.php">Home</a>
+                                    <a href="about.php">About Us</a>
+                                    <a href="homes.php">Browse Properties</a>
+                                    <a href="signup.php">Become a Partner</a>
+                                    <a href="contact.php">Contact</a>
                                 </div>
                             </div>
                         </div>
@@ -54,11 +54,11 @@
                             <div class="ul-footer-widget">
                                 <h3 class="ul-footer-widget-title">Stay Options</h3>
                                 <div class="ul-footer-widget-links">
-                                    <a href="#">Short Stays</a>
-                                    <a href="#">Family Homes</a>
-                                    <a href="#">Luxury Apartments</a>
-                                    <a href="#">Business Travel</a>
-                                    <a href="#">Extended Stays</a>
+                                    <a href="homes.php?stay_type=short">Short Stays</a>
+                                    <a href="homes.php?stay_type=family">Family Homes</a>
+                                    <a href="homes.php?stay_type=luxury">Luxury Apartments</a>
+                                    <a href="homes.php?stay_type=business">Business Travel</a>
+                                    <a href="homes.php?stay_type=extended">Extended Stays</a>
                                 </div>
                             </div>
                         </div>
