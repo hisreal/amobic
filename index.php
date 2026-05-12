@@ -15,7 +15,7 @@
                                         <!-- banner text -->
                                         <div class="col-md-9 col-sm-8">
                                             <div class="ul-banner-slide-txt wow animate__fadeInUp">
-                                                <h1 class="ul-banner-slide-title">Refined Living, Where</h1>
+                                                <h1 class="ul-banner-slide-title">Refined Living, Anywhere</h1>
                                                 <p class="ul-banner-slide-descr">Discover thoughtfully curated homes designed for comfort, elegance, and seamless living.</p>
                                                 <div class="ul-banner-slide-btns">
                                                     <a href="homes.php" class="ul-btn">Explore Homes</a>  <a href="signup.php" class="ul-btn">List Your Properties</a>
