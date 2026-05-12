@@ -1,7 +1,8 @@
 <?php require_once("header.php"); ?>
 <main>
 <!-- BANNER SECTION START -->
-        <section class="ul-banner">
+        <section style="background: url(assets/img/hero/home.jpg) no-repeat center center;
+"  class="ul-banner">
             <!-- top -->
             <div class="top">
                 <div class="ul-banner-slider swiper">
@@ -14,10 +15,10 @@
                                         <!-- banner text -->
                                         <div class="col-md-9 col-sm-8">
                                             <div class="ul-banner-slide-txt wow animate__fadeInUp">
-                                                <h1 class="ul-banner-slide-title">Refined Living in Cape Town</h1>
-                                                <p class="ul-banner-slide-descr">Residential/Commercial Real Estate, Property Management & HOA Management</p>
+                                                <h1 class="ul-banner-slide-title">Refined Living, Where</h1>
+                                                <p class="ul-banner-slide-descr">Discover thoughtfully curated homes designed for comfort, elegance, and seamless living.</p>
                                                 <div class="ul-banner-slide-btns">
-                                                    <a href="" class="ul-btn">Explore Homes</a>  <a href="" class="ul-btn">List Your Properties</a>
+                                                    <a href="homes.php" class="ul-btn">Explore Homes</a>  <a href="signup.php" class="ul-btn">List Your Properties</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -50,10 +51,9 @@
                                     
                                     <div class="ul-2-about-point-txt">
                                         <h6 class="ul-section-sub-title">ABOUT US</h6>
-                                        <p class="ul-2-about-point-descr">Amobic Homes blends modern hospitality with intelligent property
-                                             management to create exceptional living experiences. </p>
-                                    <p class="ul-2-about-point-descr">We offer beautifully designed homes while
-                                              helping property owners maximize value in South Africa.</p>
+                                        <p class="ul-2-about-point-descr">Amobic Homes is a global hospitality and property management brand dedicated to creating refined living experiences through 
+                                          thoughtfully designed homes and seamless service.</p>
+                                    <p class="ul-2-about-point-descr">We combine modern hospitality with intelligent property management to deliver comfort for guests and consistent value for property owners.</p>
                                                 <br>
                                                <a href="about.php" class="ul-btn">Learn More</a>
                                     </div>
@@ -173,7 +173,7 @@
               </div>
             </div>
 
-            <a href="#contact" class="ul-btn property-management-btn">
+            <a href="signup.php" class="ul-btn property-management-btn">
               Become a Partner
             </a>
           </div>
@@ -295,7 +295,7 @@
         Discover beautifully curated homes in prime locations, designed for comfort, style, and unforgettable experiences.
       </p>
 
-      <a href="#properties" class="ul-btn cta-property-btn">
+      <a href="homes.php" class="ul-btn cta-property-btn">
         Browse Properties
       </a>
 

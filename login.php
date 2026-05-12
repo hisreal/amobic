@@ -4,11 +4,10 @@
   <div class="amobic-auth-card">
 
     <div class="amobic-auth-header">
-     <a href="index.html" class="amobic-auth-logo">
-        <img src="assets/img/logo/amobic-logo-dark-full.png" alt="Amobic">
-      </a>
-
-      <h1>Sign up </h1>
+        <a href="index.html" class="amobic-auth-logo">
+          <img src="assets/img/logo/amobic-logo-dark-full.png" alt="Amobic">
+        </a>
+      <h1>Log in</h1>
     </div>
 
     <form action="verify-code.php" method="get" class="amobic-auth-form">
@@ -17,14 +16,19 @@
         <input type="text" name="login" placeholder="Enter email or phone number" required>
       </div>
 
+       <div class="amobic-auth-group">
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter password" required>
+      </div>
+
       <button type="submit" class="amobic-auth-primary-btn">
         Continue
       </button>
     </form>
    <div class="amobic-auth-footer">
     <p>
-      Already have an account?
-      <a href="login.php">Log in</a>
+     You dont have an account?
+      <a href="signup.php">Sign up</a>
     </p>
   </div>
     <div class="amobic-auth-divider">

@@ -121,38 +121,10 @@
         <div class="loader"></div>
     </div>
 
-    <!-- SIDEBAR SECTION START -->
-    <div class="ul-sidebar">
-        <!-- header -->
-        <div class="ul-sidebar-header">
-            <div class="ul-sidebar-header-logo">
-                <a href="index.html">
-                    <img src="assets/img/logo/amobic-logo-dark-full.png" alt="logo" class="logo">
-                </a>
-            </div>
-            <!-- sidebar closer -->
-            <button class="ul-sidebar-closer"><i class="flaticon-close"></i></button>
-        </div>
-
-        <div class="ul-sidebar-header-nav-wrapper d-block"></div>
-
-
-        
-
-    </div>
-    <!-- SIDEBAR SECTION END -->
-
-    <!-- SEARCH MODAL SECTION START -->
-    <div class="ul-search-form-wrapper flex-grow-1 flex-shrink-0">
-        <button class="ul-search-closer"><i class="flaticon-close"></i></button>
-
-        <form action="#" class="ul-search-form">
-            <div class="ul-search-form-right">
-                <input type="search" name="search" id="ul-search" placeholder="Search Here">
-                <button type="submit"><span class="icon"><i class="flaticon-search"></i></span></button>
-            </div>
-        </form>
-    </div>
-    <!-- SEARCH MODAL SECTION END -->
-
-    <!-- HEADER SECTION END -->
+    <main>
+      
+<div class="amobic-auth-topbar">
+  <button type="button" class="amobic-back-btn" onclick="history.back()">
+    <i class="bi bi-arrow-left"></i>
+  </button>
+</div>

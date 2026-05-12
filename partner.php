@@ -1,12 +1,5 @@
-<?php require_once("header.php"); ?>
-<main>
-  <!-- BREADCRUMB SECTION START -->
-        <div class="ul-breadcrumb">
-            <div class="wow animate__fadeInUp">
-                <h2 class="ul-breadcrumb-title">Partnership</h2>
-                
-            </div>
-        </div>
+<?php require_once("header2.php"); ?>
+
 <section class="amobic-auth-section">
   <div class="amobic-auth-card amobic-partner-card">
 
@@ -113,4 +106,4 @@
   </div>
 </section>
 
-<?php require_once("footer.php"); ?>
+<?php require_once("footer2.php"); ?>

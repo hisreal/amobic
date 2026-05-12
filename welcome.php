@@ -1,20 +1,16 @@
-<?php require_once("header.php"); ?>
-<main>
-  <!-- BREADCRUMB SECTION START -->
-        <div class="ul-breadcrumb">
-            <div class="wow animate__fadeInUp">
-                <h2 class="ul-breadcrumb-title">Onboarding Section...</h2>
-                
-            </div>
-        </div>
+<?php require_once("header2.php"); ?>
+
 <section class="amobic-auth-section">
   <div class="amobic-auth-card text-center">
+      <a href="index.html" class="amobic-auth-logo">
+        <img src="assets/img/logo/amobic-logo-dark-full.png" alt="Amobic">
+      </a>
+      <br>
 
     <div class="amobic-success-icon">
       <i class="bi bi-check2"></i>
     </div>
 
-    <h1>Welcome to Amobic</h1>
 
     <p class="amobic-auth-success-text">
       Your account is ready. Start exploring curated Cape Town stays or partner with us.
@@ -33,4 +29,4 @@
   </div>
 </section>
 
-<?php require_once("footer.php"); ?>
+<?php require_once("footer2.php"); ?>

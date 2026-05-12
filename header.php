@@ -171,22 +171,23 @@
                     <div class="to-go-to-sidebar-in-mobile">
                         <nav class="ul-header-nav">
                             <a href="index.php">Home</a>
-                             <a href="">Experiences</a>
+                             <a href="homes.php">Explore Homes</a>
+                             <a href="experiences.php">Experiences</a>
                            
-                            <a href="about.php">For Landlords</a>
-                             <a href="">About</a>
-                              <a href="">FAQs</a>
-                               <a href="">Contact</a>
+                            <a href="landlords.php">For Landlords</a>
+                             <a href="about.php">About</a>
+                              <a href="faq.php">FAQs</a>
+                               <a href="contact.php">Contact</a>
                                 <a href="signup.php">Sign up</a>
-                                 <a href="">List Your Property</a>
+                                 <!--<a href="">List Your Property</a>-->
                         </nav>
                     </div>
                 </div>
 
                 <!-- actions -->
                 <div class="ul-header-actions">                  
-                     <a href="signup.php" class="add-property-btn d-xxs-none"><i class="flaticon-user"></i> Sign Up</a>
-                    <a href="#" class="add-property-btn d-xxs-none"><i class="flaticon-home"></i> Add Property</a>
+                     <!-- <a href="signup.php" class="add-property-btn d-xxs-none"><i class="flaticon-user"></i> Sign Up</a>
+                    <a href="#" class="add-property-btn d-xxs-none"><i class="flaticon-home"></i> Add Property</a> -->
                     <button class="ul-header-sidebar-opener d-lg-none">
                         <i class="flaticon-menu-button"></i>
                     </button>              
