@@ -93,7 +93,7 @@
     </div>
 
     <div class="amobic-floating-search">
-      <form class="row g-3 align-items-end">
+      <form action="homes.php" method="post" class="row g-3 align-items-end">
         <div class="col-lg-3 col-md-6">
           <label for="hero-location" class="amobic-hero-label">Location</label>
           <div class="amobic-field-wrap">
