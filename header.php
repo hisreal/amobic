@@ -162,7 +162,7 @@
                 <!-- header left -->
                 <div class="header-bottom-left">
                     <div class="logo-container">
-                        <a href="index.html" class="d-inline-block"><img src="assets/img/logo/amobic-logo-white-full.png" alt="logo" class="logo"></a>
+                        <a href="index.php" class="d-inline-block"><img src="assets/img/logo/amobic-logo-white-full.png" alt="logo" class="logo"></a>
                     </div>
                 </div>
 

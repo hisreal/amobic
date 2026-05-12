@@ -40,8 +40,8 @@
         <section  class="property-management-section ul-2-about ul-section-spacing">
             <div class="ul-container">
                <div class="property-management-wrap">
-                <!-- about content -->
-                <div class="row row-cols-lg-2 row-cols-1  wow animate__fadeInUp">
+                <!-- about content(change this row-cols-lg-1 to row-cols-lg-2 later) -->
+                <div class="row row-cols-lg-1 row-cols-1  wow animate__fadeInUp">
                     <div class="col">
                         <div class="ul-2-about-txt">
                             
@@ -67,7 +67,7 @@
                     <!-- img -->
                     <div class="col">
                         <div class="ul-2-about-img">
-                            <img src="assets/img/images/about.png" alt="Image" class="main-img">
+                           <!-- <img src="assets/img/images/about.png" alt="Image" class="main-img">-->
                             
                         </div>
                     </div>
@@ -288,7 +288,7 @@
     <div class="cta-property-wrap text-center">
 
       <h2 class="cta-property-title">
-        Your Cape Town Stay Starts Here
+       Your Next Stay Starts Here
       </h2>
 
       <p class="cta-property-text">

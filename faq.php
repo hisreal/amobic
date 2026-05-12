@@ -1,7 +1,7 @@
 <?php require_once("header.php"); ?>
 <main>
 <!-- BANNER SECTION START -->
-        <section style="background: url(assets/img/hero/faq.jpg) no-repeat center center;"  class="ul-banner">
+        <section style="background: url(assets/img/hero/faqq.jpg) no-repeat center center;"  class="ul-banner">
             <!-- top -->
             <div class="top">
                 <div class="ul-banner-slider swiper">

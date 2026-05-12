@@ -9,13 +9,14 @@
                     <!-- Brand Column -->
                     <div class="col-lg-4 col-md-6">
                         <div class="ul-footer-about amobic-footer-brand">
-                            <a href="index.html" class="amobic-footer-logo">
+                            <a href="index.php" class="amobic-footer-logo">
                                 <img width="210" src="assets/img/logo/amobic-logo-white-full.png" alt="Amobic logo">
                             </a>
 
                             <p class="ul-footer-about-txt">
-                                Thoughtfully curated Cape Town stays designed for comfort, calm, and memorable experiences. Whether you are visiting for business or leisure, Amobic helps you feel at home in the city’s most desirable locations.
-                            </p>
+                                Amobic Homes is a global hospitality and property management brand dedicated to creating
+                                refined living experiences through thoughtfully designed homes and seamless service.
+                                                            </p>
 
                             <div class="amobic-footer-badges">
                                 <span>Prime Locations</span>
@@ -73,18 +74,18 @@
                                 <div class="amobic-footer-contact">
                                     <a href="mailto:hello@amobic.com">
                                         <span><i class="bi bi-envelope"></i></span>
-                                        hello@amobic.com
+                                        hello@amobichomes.com
                                     </a>
 
-                                    <a href="tel:+270000000000">
+                                    <a href="tel:+27774085198">
                                         <span><i class="bi bi-telephone"></i></span>
-                                        +27 00 000 0000
+                                        +27 77 408 5198
                                     </a>
 
-                                    <div class="amobic-footer-contact-text">
+                                    <!--<div class="amobic-footer-contact-text">
                                         <span><i class="bi bi-geo-alt"></i></span>
                                         Cape Town, South Africa
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
 
