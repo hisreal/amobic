@@ -12,11 +12,26 @@
       <p>Add your name and create a password.</p>
     </div>
 
-   <form action="welcome.php" method="get" class="amobic-auth-form">
+   <form method="post" autocomplete="off" id="profileForm" class="amobic-auth-form">
+    
+    <div class="amobic-auth-group">
+    <label>Email</label>
+    <input type="text" disabled="disabled" value="<?php echo $_SESSION['pending_email']; ?>">
+  </div>
 
   <div class="amobic-auth-group">
-    <label>Full name</label>
-    <input type="text" name="full_name" placeholder="Enter your full name" required>
+    <label>First Name</label>
+    <input type="text" name="first_name" placeholder="Enter your first name" required>
+  </div>
+
+ <div class="amobic-auth-group">
+ <label>Last Name</label>
+    <input type="text" name="last_name" placeholder="Enter your last name" required>
+  </div>
+
+ <div class="amobic-auth-group">
+  <label>Phone Number</label>
+    <input type="number" name="phone" placeholder="Enter your phone number" required>
   </div>
 
   <div class="amobic-auth-row">
@@ -24,7 +39,7 @@
     <div class="amobic-auth-group">
       <label>Gender</label>
 
-      <select name="gender" required>
+      <select name="sex" required>
         <option value="">Select gender</option>
         <option value="male">Male</option>
         <option value="female">Female</option>
@@ -62,8 +77,9 @@
       </button>
     </div>
   </div>
-
-  <button type="submit" class="amobic-auth-primary-btn">
+<input type="hidden" name="save-user" value="1">
+    <div id="alertMessage"></div>
+  <button type="submit" id="submitBtn"  class="amobic-auth-primary-btn">
     Continue to Amobic
   </button>
 

@@ -10,18 +10,27 @@
       <h1>Log in</h1>
     </div>
 
-    <form action="verify-code.php" method="get" class="amobic-auth-form">
+    <form id="loginForm" method="post" class="amobic-auth-form">
       <div class="amobic-auth-group">
         <label>Email or phone number</label>
-        <input type="text" name="login" placeholder="Enter email or phone number" required>
+        <input type="text" name="email" placeholder="Enter email or phone number" required>
       </div>
 
        <div class="amobic-auth-group">
         <label>Password</label>
         <input type="password" name="password" placeholder="Enter password" required>
       </div>
-
-      <button type="submit" class="amobic-auth-primary-btn">
+      <input type="hidden" name="login-user" value="1">
+      <div class="amobic-auth-row amobic-auth-between">
+        <div class="amobic-auth-group amobic-auth-flex-row">
+          <input type="checkbox" name="remember_me" id="rememberMe">
+          <label for="rememberMe">Remember me</label>
+        </div>
+        <a href="#">Forgot password?</a>
+      </div>
+      <div id="alertMessage"></div>
+      <input type="hidden" name="login-user" value="1">
+      <button type="submit" id="submitBtn" class="amobic-auth-primary-btn">
         Continue
       </button>
     </form>

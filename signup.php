@@ -1,4 +1,5 @@
-<?php require_once("header2.php"); ?>
+<?php 
+require_once("header2.php"); ?>
 
 <section class="amobic-auth-section">
   <div class="amobic-auth-card">
@@ -11,16 +12,20 @@
       <h1>Sign up </h1>
     </div>
 
-    <form action="verify-code.php" method="get" class="amobic-auth-form">
-      <div class="amobic-auth-group">
-        <label>Email or phone number</label>
-        <input type="text" name="login" placeholder="Enter email or phone number" required>
-      </div>
+    <form id="signup-form" method="post" class="amobic-auth-form">
+    <input type="hidden" name="signup" value="1">
+  <div class="amobic-auth-group">
+    <label>Email Address</label>
+    <input type="email" name="email" placeholder="Enter email address">
+  </div>
 
-      <button type="submit" class="amobic-auth-primary-btn">
-        Continue
-      </button>
-    </form>
+  <div id="alertMessage"></div>
+
+  <button type="submit" id="submitBtn" name="signup" class="amobic-auth-primary-btn">
+    Continue
+  </button>
+
+</form>
    <div class="amobic-auth-footer">
     <p>
       Already have an account?

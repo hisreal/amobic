@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +43,7 @@
 
     <!-- libraries CSS -->
     <link rel="stylesheet" href="assets/icon/flaticon_real_estate.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
     <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">

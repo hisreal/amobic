@@ -152,7 +152,7 @@
         <div class="col-lg-6">
           <div class="property-management-content">
             <span class="ul-section-sub-title">PROPERTY MANAGEMENT</span>
-            <h2 class="ul-section-title">Maximize Your Property in Cape Town</h2>
+            <h2 class="ul-section-title">Maximize Your Property Everywhere</h2>
             <p class="property-management-text">
               We transform properties into high performing assets through design, pricing strategy, and professional management.
               Enjoy increased returns without the operational stress.

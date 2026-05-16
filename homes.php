@@ -31,8 +31,7 @@
 
             
 </section>
-
-        <div class="ul-inner-page-content-wrapper ul-projects-page-content-wrapper">
+     <div class="ul-inner-page-content-wrapper ul-projects-page-content-wrapper">
             <div class="ul-inner-page-container">
                 <!-- search filters -->
                 <form action="#" class="ul-projects-search-filters">
@@ -125,45 +124,6 @@
 
                 <!-- project cards grid -->
                 <div class="row row-cols-md-3 row-cols-2 row-cols-xxs-1 ul-bs-row">
-                    <!-- single project -->
-                    <div class="col wow animate__fadeInUp">
-                        <div class="ul-project">
-                            <div class="ul-project-img"><img src="assets/img/project-1.jpg" alt="Project Image"></div>
-                            <div class="ul-project-txt">
-                                <span class="ul-project-tag">Popular</span>
-                                <div class="top">
-                                    <div class="left">
-                                        <span class="ul-project-price"><span class="number">$4,500</span>/Month</span>
-                                        <a href="project-details.html" class="ul-project-title">Palm Harbor</a>
-                                        <p class="ul-project-location">2821 Lake Sevilla, Palm Harbor, TX</p>
-                                    </div>
-                                    <div class="right">
-                                        <button class="ul-project-add-to-favorites-btn"><i class="flaticon-heart"></i></button>
-                                    </div>
-                                </div>
-
-                                <!-- bottom -->
-                                <div class="ul-project-infos">
-                                    <!-- single info -->
-                                    <div class="ul-project-info">
-                                        <span class="icon"><i class="flaticon-bed-color"></i></span>
-                                        <span class="text">3 Beds</span>
-                                    </div>
-                                    <!-- single info -->
-                                    <div class="ul-project-info">
-                                        <span class="icon"><i class="flaticon-bath"></i></span>
-                                        <span class="text">2 Bathrooms</span>
-                                    </div>
-                                    <!-- single info -->
-                                    <div class="ul-project-info">
-                                        <span class="icon"><i class="flaticon-scale"></i></span>
-                                        <span class="text">6x7.5 m²</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- single project -->
                     <div class="col wow animate__fadeInUp">
                         <div class="ul-project">
@@ -361,7 +321,7 @@
                 </div>
             </div>
         </div>
-
+</section>
 
 
   

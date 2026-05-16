@@ -37,9 +37,29 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/tab.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/form-auth.js"></script>
 
-    
-</script>
+
+  <!--const openSidebar = document.getElementById("openSidebar");
+const closeSidebar = document.getElementById("closeSidebar");
+const mobileSidebar = document.getElementById("mobileSidebar");
+const sidebarOverlay = document.getElementById("sidebarOverlay");
+
+openSidebar.addEventListener("click", function () {
+  mobileSidebar.classList.add("active");
+  sidebarOverlay.classList.add("active");
+});
+
+closeSidebar.addEventListener("click", function () {
+  mobileSidebar.classList.remove("active");
+  sidebarOverlay.classList.remove("active");
+});
+
+sidebarOverlay.addEventListener("click", function () {
+  mobileSidebar.classList.remove("active");
+  sidebarOverlay.classList.remove("active");
+});-->
+
 </body>
 
 </html>

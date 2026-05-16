@@ -187,3 +187,5 @@ new SlimSelect({
 new SlimSelect({ select: "#guests" });
 new SlimSelect({ select: "#property-type" });
 new SlimSelect({ select: "#price-range" });
+
+  
