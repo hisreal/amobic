@@ -35,6 +35,7 @@ if (isset($_POST['update-profile'])) {
     $phone = trim($_POST['phone']);
     $sex = trim($_POST['sex']);
     $dob = trim($_POST['dob']);
+    $bio = trim($_POST['bio']);
     $preferred_currency = trim($_POST['preferred_currency']);
     $preferred_language = trim($_POST['preferred_language']);
 
@@ -51,7 +52,8 @@ if (isset($_POST['update-profile'])) {
         empty($last_name) ||
         empty($phone) ||
         empty($sex) ||
-        empty($dob)
+        empty($dob) ||
+        empty($bio)
     ) {
 
         jsonResponse("error", "All fields are required.");
@@ -79,6 +81,7 @@ if (isset($_POST['update-profile'])) {
             dob = ?,
             preferred_currency = ?,
             preferred_language = ?
+            bio = ?
         WHERE id = ?
     ");
 
@@ -87,7 +90,7 @@ if (isset($_POST['update-profile'])) {
     }
 
     $stmt->bind_param(
-        "sssssssi",
+        "ssssssss",
         $first_name,
         $last_name,
         $phone,
@@ -95,6 +98,7 @@ if (isset($_POST['update-profile'])) {
         $dob,
         $preferred_currency,
         $preferred_language,
+        $bio,
         $user_id
     );
 
