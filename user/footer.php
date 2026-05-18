@@ -115,29 +115,29 @@
 
 </script>
   
-    <!-- <script>
-        /* sidebar toggle */
+<script>
+    /* sidebar toggle */
 
-        const openSidebar = document.getElementById("openSidebar");
-        const closeSidebar = document.getElementById("closeSidebar");
-        const mobileSidebar = document.getElementById("mobileSidebar");
-        const sidebarOverlay = document.getElementById("sidebarOverlay");
+    const openSidebar = document.getElementById("openSidebar");
+    const closeSidebar = document.getElementById("closeSidebar");
+    const mobileSidebar = document.getElementById("mobileSidebar");
+    const sidebarOverlay = document.getElementById("sidebarOverlay");
 
-        openSidebar.addEventListener("click", function () {
-        mobileSidebar.classList.add("active");
-        sidebarOverlay.classList.add("active");
-        });
+    openSidebar.addEventListener("click", function () {
+    mobileSidebar.classList.add("active");
+    sidebarOverlay.classList.add("active");
+    });
 
-        closeSidebar.addEventListener("click", function () {
-        mobileSidebar.classList.remove("active");
-        sidebarOverlay.classList.remove("active");
-        });
+    closeSidebar.addEventListener("click", function () {
+    mobileSidebar.classList.remove("active");
+    sidebarOverlay.classList.remove("active");
+    });
 
-        sidebarOverlay.addEventListener("click", function () {
-        mobileSidebar.classList.remove("active");
-        sidebarOverlay.classList.remove("active");
-        });
-</script>-->
+    sidebarOverlay.addEventListener("click", function () {
+    mobileSidebar.classList.remove("active");
+    sidebarOverlay.classList.remove("active");
+    });
+</script>
 </body>
 
 </html>
