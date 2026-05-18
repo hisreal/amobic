@@ -32,12 +32,90 @@
     <script src="../assets/vendor/splittype/index.min.js"></script>
     <script src="../assets/vendor/mixitup/mixitup.min.js"></script>
     <script src="../assets/vendor/fslightbox/fslightbox.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- custom JS -->
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/tab.js"></script>
     <script src="../assets/js/custom.js"></script>
-    <script>
+<script>
+    $(document).ready(function () {
+
+  function handleAjaxForm(formId, url, buttonText = "Continue") {
+
+    $(formId).on("submit", function (e) {
+      e.preventDefault();
+
+      const form = $(this);
+      const alertBox = $("#alertMessage");
+      const submitBtn = form.find("button[type='submit']");
+
+      alertBox.html("");
+
+      submitBtn.prop("disabled", true);
+      submitBtn.html('<span class="spinner-border spinner-border-sm"></span> Sending...');
+
+      $.ajax({
+        url: url,
+        type: "POST",
+        data: form.serialize(),
+        dataType: "json",
+
+        success: function (response) {
+
+          const alertClass = response.status === "success"
+            ? "alert-success"
+            : "alert-danger";
+
+          alertBox.html(
+            '<div class="alert ' + alertClass + '">' +
+              response.message +
+            '</div>'
+          );
+
+          if (response.status === "success") {
+
+            form[0].reset();
+
+            if (response.redirect) {
+              setTimeout(function () {
+                window.location.href = response.redirect;
+              }, 1200);
+            }
+          }
+        },
+
+        
+
+        error: function (xhr, status, error) {
+
+          console.log("AJAX STATUS:", status);
+          console.log("AJAX ERROR:", error);
+          console.log("SERVER RESPONSE:", xhr.responseText);
+
+          alertBox.html(
+            '<div class="alert alert-danger">' +
+              "Something went wrong. Please try again." +
+            '</div>'
+          );
+        },
+
+        complete: function () {
+          submitBtn.prop("disabled", false);
+          submitBtn.html(buttonText);
+        }
+      });
+    });
+  }
+
+
+  handleAjaxForm("#profileUpdateForm", "../config/update-code.php", "Save Changes");
+});
+
+
+</script>
+  
+    <!-- <script>
         /* sidebar toggle */
 
         const openSidebar = document.getElementById("openSidebar");
@@ -59,7 +137,7 @@
         mobileSidebar.classList.remove("active");
         sidebarOverlay.classList.remove("active");
         });
-</script>
+</script>-->
 </body>
 
 </html>

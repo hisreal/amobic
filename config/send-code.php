@@ -94,7 +94,7 @@ if (isset($_POST["signup"])) {
 
 
 /* VERIFY CODE */
-if (isset($_POST["verification_code"])) {
+if (isset($_POST["verify"])) {
 
     if (!isset($_SESSION["pending_email"])) {
         jsonResponse("error", "Session expired. Please start registration again.");
@@ -267,3 +267,4 @@ if (isset($_POST["login-user"])) {
 }
 
 jsonResponse("error", "No valid action found.");
+

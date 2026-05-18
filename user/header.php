@@ -1,6 +1,8 @@
 <?php 
-    require_once('session.php'); 
+ require_once('session.php');
+require_ONCE("../config/dbh.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +28,7 @@
     <link rel="stylesheet" href="../assets/vendor/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../assets/vendor/slim-select/slimselect.css">
     <link rel="stylesheet" href="../assets/vendor/animate-wow/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- custom CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">

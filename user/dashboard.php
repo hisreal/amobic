@@ -13,7 +13,7 @@
                 <i class="bi bi-calendar2-x"></i>
             </div>
 
-            <h3>You currently have no bookings.</h3>
+            <h3>You currently have no bookings. </h3>
 
             <p>
                 Start exploring homes designed for exceptional stays.
