@@ -253,7 +253,7 @@ $user = $result->fetch_assoc();
                             name="bio"
                             rows="5"
                             placeholder="Tell us about yourself..."
-                        ></textarea>
+                        ><?= htmlspecialchars($user['bio']); ?></textarea>
 
                     </div>
                     <div id="alertMessage" class="alert-message"></div>
