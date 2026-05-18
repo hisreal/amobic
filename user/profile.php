@@ -16,7 +16,8 @@ $stmt = $conn->prepare("
         sex,
         dob,
         preferred_currency,
-        preferred_language
+        preferred_language,
+        bio
     
     FROM amobic_users
     WHERE id = ?

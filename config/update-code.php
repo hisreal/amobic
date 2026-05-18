@@ -30,22 +30,17 @@ if (isset($_POST['update-profile'])) {
 
     $user_id = $_SESSION['guest_id'];
 
-    $first_name = trim($_POST['first_name']);
-    $last_name = trim($_POST['last_name']);
-    $phone = trim($_POST['phone']);
-    $sex = trim($_POST['sex']);
-    $dob = trim($_POST['dob']);
-    $bio = trim($_POST['bio']);
-    $preferred_currency = trim($_POST['preferred_currency']);
-    $preferred_language = trim($_POST['preferred_language']);
+    $first_name = trim($_POST['first_name'] ?? '');
+    $last_name = trim($_POST['last_name'] ?? '');
+    $phone = trim($_POST['phone'] ?? '');
+    $sex = trim($_POST['sex'] ?? '');
+    $dob = trim($_POST['dob'] ?? '');
+    $bio = trim($_POST['bio'] ?? '');
+    $preferred_currency = trim($_POST['preferred_currency'] ?? '');
+    $preferred_language = trim($_POST['preferred_language'] ?? '');
 
     $allowed_currencies = ['USD', 'GBP', 'EUR', 'NGN', 'ZAR'];
     $allowed_languages = ['en', 'fr', 'es', 'pt'];
-
-
-    /* =========================================
-       VALIDATION
-    ========================================= */
 
     if (
         empty($first_name) ||
@@ -55,22 +50,16 @@ if (isset($_POST['update-profile'])) {
         empty($dob) ||
         empty($bio)
     ) {
-
         jsonResponse("error", "All fields are required.");
     }
 
-    if (!in_array($preferred_currency, $allowed_currencies)) {
+    if (!in_array($preferred_currency, $allowed_currencies, true)) {
         jsonResponse("error", "Invalid currency selected.");
     }
 
-    if (!in_array($preferred_language, $allowed_languages)) {
+    if (!in_array($preferred_language, $allowed_languages, true)) {
         jsonResponse("error", "Invalid language selected.");
     }
-
-
-    /* =========================================
-       UPDATE USER
-    ========================================= */
 
     $stmt = $conn->prepare("
         UPDATE amobic_users
@@ -80,17 +69,17 @@ if (isset($_POST['update-profile'])) {
             sex = ?,
             dob = ?,
             preferred_currency = ?,
-            preferred_language = ?
+            preferred_language = ?,
             bio = ?
         WHERE id = ?
     ");
 
     if (!$stmt) {
-        jsonResponse("error", "Database preparation failed.");
+        jsonResponse("error", "Database preparation failed. $conn->error");
     }
 
     $stmt->bind_param(
-        "ssssssss",
+        "ssssssssi",
         $first_name,
         $last_name,
         $phone,
@@ -110,11 +99,9 @@ if (isset($_POST['update-profile'])) {
         jsonResponse("success", "Profile updated successfully.", "profile.php");
 
     } else {
-
-        jsonResponse("error", "Profile update failed.");
+        jsonResponse("error", "Profile update failed. $conn->error");
     }
 
 } else {
-
     jsonResponse("error", "Invalid request.");
 }
