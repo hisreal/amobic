@@ -1,6 +1,7 @@
 <?php 
  require_once('session.php');
 require_ONCE("../config/dbh.php");
+$current_page = basename($_SERVER['PHP_SELF']);
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +29,6 @@ require_ONCE("../config/dbh.php");
     <link rel="stylesheet" href="../assets/vendor/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../assets/vendor/slim-select/slimselect.css">
     <link rel="stylesheet" href="../assets/vendor/animate-wow/animate.min.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- custom CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -61,12 +61,26 @@ require_ONCE("../config/dbh.php");
       </div>
 
       <nav class="amobic-desktop-nav">
-        <a href="dashboard.php" class="active">My Bookings</a>
-        <a href="saved-home.php">Save Homes</a>
-        <a href="profile.php">My Profile</a>
-        <a href="password.php">Change Password</a>
-        <a href="logout.php">Logout</a>
-      </nav>
+            <a href="dashboard.php" class="<?= ($current_page == 'dashboard.php') ? 'active' : ''; ?>">
+                My Bookings
+            </a>
+
+            <a href="saved-home.php" class="<?= ($current_page == 'saved-home.php') ? 'active' : ''; ?>">
+                Save Homes
+            </a>
+
+            <a href="profile.php" class="<?= ($current_page == 'profile.php') ? 'active' : ''; ?>">
+                My Profile
+            </a>
+
+            <a href="password.php" class="<?= ($current_page == 'password.php') ? 'active' : ''; ?>">
+                Change Password
+            </a>
+
+            <a href="logout.php" class="<?= ($current_page == 'logout.php') ? 'active' : ''; ?>">
+                Logout
+            </a>
+        </nav>
 
       <div class="amobic-navbar-right">
         <a href="dashboard.php" class="amobic-switch-link">Switch to Landlord</a>
@@ -91,10 +105,20 @@ require_ONCE("../config/dbh.php");
       </div>
 
       <nav class="amobic-sidebar-menu">
-        <a href="dashboard.php"  class="active"><i class="bi bi-calendar3"></i> My Bookings </a>
-        <a href="saved-home.php"><i class="bi bi-house-door"></i> Saved Homes </a>
-        <a href="profile.php"><i class="bi bi-person"></i> Profile</a>
-        <a href="password.php"><i class="bi bi-lock"></i> Password</a>
-        <a href="logout.php"><i class="bi bi-box-arrow-right"></i> Logout</a>
+        <a href="dashboard.php" class="<?= ($current_page == 'dashboard.php') ? 'active' : ''; ?>">
+          <i class="bi bi-calendar3"></i> My Bookings
+        </a>
+        <a href="saved-home.php" class="<?= ($current_page == 'saved-home.php') ? 'active' : ''; ?>">
+          <i class="bi bi-house-door"></i> Saved Homes
+        </a>
+        <a href="profile.php" class="<?= ($current_page == 'profile.php') ? 'active' : ''; ?>">
+          <i class="bi bi-person"></i> Profile
+        </a>
+        <a href="password.php" class="<?= ($current_page == 'password.php') ? 'active' : ''; ?>">
+          <i class="bi bi-lock"></i> Password
+        </a>
+        <a href="logout.php" class="<?= ($current_page == 'logout.php') ? 'active' : ''; ?>">
+          <i class="bi bi-box-arrow-right"></i> Logout
+        </a>
       </nav>
     </aside>

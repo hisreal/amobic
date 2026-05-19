@@ -9171,3 +9171,414 @@ body {
 .amobic-security-section {
   width: 100%;
 }
+
+.amobic-waitlist-hero {
+  min-height: 100vh;
+  padding: 170px 0 110px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.amobic-waitlist-bg,
+.amobic-waitlist-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.amobic-waitlist-bg {
+  background: url("../img/images/karabo-mdluli-vvOwE2uIBBA-unsplash.jpg") center/cover no-repeat;
+  transform: scale(1.03);
+}
+
+.amobic-waitlist-overlay {
+  background:
+    linear-gradient(90deg, rgba(16, 24, 18, 0.9) 0%, rgba(16, 24, 18, 0.72) 44%, rgba(16, 24, 18, 0.28) 100%),
+    radial-gradient(circle at 82% 18%, rgba(214, 236, 172, 0.32), transparent 32%);
+}
+
+.amobic-waitlist-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.amobic-waitlist-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.72fr);
+  gap: 54px;
+  align-items: center;
+}
+
+.amobic-waitlist-kicker,
+.amobic-waitlist-section-head span,
+.amobic-waitlist-partner-copy > span {
+  width: max-content;
+  max-width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #eff8df;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: inline-flex;
+}
+
+.amobic-waitlist-copy h1 {
+  max-width: 820px;
+  margin: 24px 0 22px;
+  color: #ffffff;
+  font-size: clamp(44px, 6vw, 82px);
+  line-height: 0.98;
+  font-weight: 900;
+}
+
+.amobic-waitlist-copy p {
+  max-width: 700px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 20px;
+  line-height: 1.65;
+}
+
+.amobic-waitlist-actions {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.amobic-waitlist-primary,
+.amobic-waitlist-secondary,
+.amobic-waitlist-submit {
+  min-height: 58px;
+  border-radius: 999px;
+  padding: 0 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.amobic-waitlist-primary,
+.amobic-waitlist-submit {
+  border: 1px solid var(--ul-primary);
+  background: var(--ul-primary);
+  color: #ffffff;
+  box-shadow: 0 18px 44px rgba(107, 127, 74, 0.34);
+}
+
+.amobic-waitlist-primary:hover,
+.amobic-waitlist-submit:hover {
+  background: #53653a;
+  border-color: #53653a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.amobic-waitlist-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  background: rgba(255, 255, 255, 0.13);
+  color: #ffffff;
+  backdrop-filter: blur(12px);
+}
+
+.amobic-waitlist-secondary:hover {
+  background: #ffffff;
+  color: #1f2a1f;
+}
+
+.amobic-waitlist-proof {
+  max-width: 650px;
+  margin-top: 34px;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(16px);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.amobic-waitlist-proof i {
+  color: #d9edbd;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.amobic-waitlist-card {
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 28px;
+  padding: 34px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.26);
+  backdrop-filter: blur(22px);
+}
+
+.amobic-waitlist-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.amobic-waitlist-card-top span,
+.amobic-waitlist-card-top strong {
+  border-radius: 999px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.amobic-waitlist-card h2 {
+  margin-bottom: 14px;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 1.12;
+  font-weight: 900;
+}
+
+.amobic-waitlist-card p {
+  margin-bottom: 28px;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.7;
+}
+
+.amobic-waitlist-card-list {
+  display: grid;
+  gap: 14px;
+}
+
+.amobic-waitlist-card-list div {
+  border-radius: 18px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.amobic-waitlist-card-list i {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #eff8df;
+  color: var(--ul-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.amobic-waitlist-section {
+  padding: 110px 0;
+  background: #f7f8f4;
+}
+
+.amobic-waitlist-section-head {
+  max-width: 760px;
+  margin: 0 auto 42px;
+}
+
+.amobic-waitlist-section-head span,
+.amobic-waitlist-partner-copy > span {
+  margin-bottom: 18px;
+  border-color: rgba(107, 127, 74, 0.18);
+  background: #eef4e3;
+  color: var(--ul-primary);
+}
+
+.amobic-waitlist-section-head h2,
+.amobic-waitlist-partner-copy h2 {
+  color: #1f2a1f;
+  font-size: clamp(32px, 4vw, 54px);
+  line-height: 1.08;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.amobic-waitlist-section-head p,
+.amobic-waitlist-partner-copy p,
+.amobic-waitlist-form-title p {
+  color: #66705d;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.amobic-waitlist-form {
+  border: 1px solid rgba(107, 127, 74, 0.12);
+  border-radius: 28px;
+  padding: 34px;
+  background: #ffffff;
+  box-shadow: 0 24px 70px rgba(24, 38, 25, 0.08);
+}
+
+.amobic-waitlist-form label {
+  margin-bottom: 10px;
+  color: #1f2a1f;
+  font-size: 14px;
+  font-weight: 900;
+  display: block;
+}
+
+.amobic-waitlist-form input,
+.amobic-waitlist-form select {
+  width: 100%;
+  min-height: 56px;
+  border: 1px solid #dfe5d7;
+  border-radius: 16px;
+  padding: 0 18px;
+  background: #fbfcf8;
+  color: #111111;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.amobic-waitlist-form input:focus,
+.amobic-waitlist-form select:focus {
+  border-color: var(--ul-primary);
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(107, 127, 74, 0.12);
+}
+
+.amobic-waitlist-submit {
+  width: max-content;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.amobic-waitlist-partner-section {
+  padding-top: 0;
+}
+
+.amobic-waitlist-split {
+  border-radius: 36px;
+  padding: 46px;
+  background:
+    linear-gradient(135deg, rgba(31, 42, 31, 0.96), rgba(80, 99, 55, 0.92)),
+    url("../img/images/properties-management.jpg") center/cover no-repeat;
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(360px, 0.72fr);
+  gap: 44px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.amobic-waitlist-partner-copy h2 {
+  color: #ffffff;
+}
+
+.amobic-waitlist-partner-copy p {
+  max-width: 640px;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.amobic-waitlist-mini-grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.amobic-waitlist-mini-grid div {
+  min-height: 132px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.amobic-waitlist-mini-grid strong {
+  color: #d9edbd;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.amobic-waitlist-mini-grid p {
+  margin: 18px 0 0;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.amobic-waitlist-partner-form {
+  display: grid;
+  gap: 18px;
+}
+
+.amobic-waitlist-form-title h3 {
+  color: #1f2a1f;
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.amobic-waitlist-form-title p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 1199px) {
+  .amobic-waitlist-hero-grid,
+  .amobic-waitlist-split {
+    grid-template-columns: 1fr;
+  }
+
+  .amobic-waitlist-card {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 767px) {
+  .amobic-waitlist-hero {
+    min-height: auto;
+    padding: 130px 0 76px;
+  }
+
+  .amobic-waitlist-copy h1 {
+    font-size: 42px;
+  }
+
+  .amobic-waitlist-copy p {
+    font-size: 17px;
+  }
+
+  .amobic-waitlist-card,
+  .amobic-waitlist-form,
+  .amobic-waitlist-split {
+    border-radius: 22px;
+    padding: 24px;
+  }
+
+  .amobic-waitlist-section {
+    padding: 72px 0;
+  }
+
+  .amobic-waitlist-partner-section {
+    padding-top: 0;
+  }
+
+  .amobic-waitlist-mini-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .amobic-waitlist-primary,
+  .amobic-waitlist-secondary,
+  .amobic-waitlist-submit {
+    width: 100%;
+  }
+}

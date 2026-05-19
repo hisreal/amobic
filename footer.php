@@ -171,7 +171,7 @@
     <script src="assets/vendor/fslightbox/fslightbox.js"></script>
 
     <!-- custom JS -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?v=<?php echo filemtime('assets/js/main.js');?>"></script>
     <script src="assets/js/tab.js"></script>
 
     <script>
@@ -218,10 +218,12 @@
 
   let selectedFiles = [];
 
-  propertyImages.addEventListener("change", function () {
-    selectedFiles = Array.from(this.files);
-    renderPreview();
-  });
+  if (propertyImages && imagePreview) {
+    propertyImages.addEventListener("change", function () {
+      selectedFiles = Array.from(this.files);
+      renderPreview();
+    });
+  }
 
   function renderPreview() {
     imagePreview.innerHTML = "";
@@ -248,6 +250,10 @@
   }
 
   function removeImage(index) {
+    if (!propertyImages) {
+      return;
+    }
+
     selectedFiles.splice(index, 1);
 
     const dataTransfer = new DataTransfer();

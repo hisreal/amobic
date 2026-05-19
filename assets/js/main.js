@@ -476,37 +476,41 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     // testimonial slider
-    new Splide('#ul-2-testimonial-slider', {
-        type: 'loop',
-        perPage: 3,
-        arrows: false,
-        pagination: false,
-        gap: 'clamp(16px,1.26vw,24px)',
-        breakpoints: {
-            768: {
-                perPage: 2,
-            },
-            480: {
-                perPage: 1,
+    if (document.querySelector('#ul-2-testimonial-slider')) {
+        new Splide('#ul-2-testimonial-slider', {
+            type: 'loop',
+            perPage: 3,
+            arrows: false,
+            pagination: false,
+            gap: 'clamp(16px,1.26vw,24px)',
+            breakpoints: {
+                768: {
+                    perPage: 2,
+                },
+                480: {
+                    perPage: 1,
+                }
             }
-        }
-    }).mount(window.splide.Extensions);
+        }).mount(window.splide.Extensions);
+    }
 
     // testimonial slider right to left
-    new Splide('#ul-2-testimonial-slider-2', {
-        type: 'loop',
-        perPage: 3,
-        arrows: false,
-        pagination: false,
-        gap: 'clamp(16px,1.26vw,24px)',
-        direction: 'rtl',
-        breakpoints: {
-            768: {
-                perPage: 2,
-            },
-            480: {
-                perPage: 1,
+    if (document.querySelector('#ul-2-testimonial-slider-2')) {
+        new Splide('#ul-2-testimonial-slider-2', {
+            type: 'loop',
+            perPage: 3,
+            arrows: false,
+            pagination: false,
+            gap: 'clamp(16px,1.26vw,24px)',
+            direction: 'rtl',
+            breakpoints: {
+                768: {
+                    perPage: 2,
+                },
+                480: {
+                    perPage: 1,
+                }
             }
-        }
-    }).mount(window.splide.Extensions);
+        }).mount(window.splide.Extensions);
+    }
 });

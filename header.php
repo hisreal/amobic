@@ -173,6 +173,7 @@
                             <a href="index.php">Home</a>
                              <a href="homes.php">Explore Homes</a>
                              <a href="experiences.php">Experiences</a>
+                             <a href="waitlist.php">Waitlist</a>
                            
                             <a href="landlords.php">For Landlords</a>
                              <a href="about.php">About</a>
