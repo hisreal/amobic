@@ -1,7 +1,4 @@
-<?php
-$hide_navigation = true;
-require_once("header.php");
-?>
+<?php require_once("header.php"); ?>
 
 <main>
   <section class="amobic-waitlist-hero">
@@ -9,10 +6,6 @@ require_once("header.php");
     <div class="amobic-waitlist-overlay"></div>
 
     <div class="container">
-      <a href="index.php" class="amobic-waitlist-logo" aria-label="Amobic Homes">
-        <img src="assets/img/logo/amobic-logo-white-full.png" alt="Amobic Homes">
-      </a>
-
       <div class="amobic-waitlist-hero-grid">
         <div class="amobic-waitlist-copy wow animate__fadeInUp">
 
@@ -77,7 +70,6 @@ require_once("header.php");
   <section class="amobic-waitlist-section" id="property-owner-waitlist">
     <div class="container">
       <div class="amobic-waitlist-section-head text-center">
-        <span>Property Owner CTA</span>
         <h2>List Your Property — Join the Waiting List</h2>
         <p>
           Designed for owners, landlords, developers, and managers who want early
@@ -140,7 +132,6 @@ require_once("header.php");
     <div class="container">
       <div class="amobic-waitlist-split">
         <div class="amobic-waitlist-partner-copy">
-          <span>Partner CTA</span>
           <h2>Partner Your Restaurant, Spa, or Experience</h2>
           <p>
             Connect with premium guests before they arrive. We are onboarding
@@ -200,4 +191,4 @@ require_once("header.php");
   </section>
 </main>
 
-<?php require_once("footer.php"); ?>
+<?php  require_once("footer.php"); ?>
