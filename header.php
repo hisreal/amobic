@@ -155,6 +155,7 @@
     </div>
     <!-- SEARCH MODAL SECTION END -->
 
+    <?php if (empty($hide_navigation)) : ?>
     <!-- HEADER SECTION START -->
     <header class="ul-header ul-header--home">
         <div class="ul-header-bottom">
@@ -202,3 +203,4 @@
         </div>
     </header>
     <!-- HEADER SECTION END -->
+    <?php endif; ?>

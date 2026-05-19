@@ -1,4 +1,7 @@
-<?php require_once("header.php"); ?>
+<?php
+$hide_navigation = true;
+require_once("header.php");
+?>
 
 <main>
   <section class="amobic-waitlist-hero">
@@ -6,9 +9,12 @@
     <div class="amobic-waitlist-overlay"></div>
 
     <div class="container">
+      <a href="index.php" class="amobic-waitlist-logo" aria-label="Amobic Homes">
+        <img src="assets/img/logo/amobic-logo-white-full.png" alt="Amobic Homes">
+      </a>
+
       <div class="amobic-waitlist-hero-grid">
         <div class="amobic-waitlist-copy wow animate__fadeInUp">
-          <span class="amobic-waitlist-kicker">Cape Town Launch • September 2026</span>
 
           <h1>Cape Town's Most Anticipated Property & Lifestyle Platform</h1>
 

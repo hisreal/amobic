@@ -9204,6 +9204,16 @@ body {
   z-index: 2;
 }
 
+.amobic-waitlist-logo {
+  width: 146px;
+  margin-bottom: 56px;
+  display: inline-flex;
+}
+
+.amobic-waitlist-logo img {
+  width: 100%;
+}
+
 .amobic-waitlist-hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.72fr);
@@ -9546,7 +9556,12 @@ body {
 @media (max-width: 767px) {
   .amobic-waitlist-hero {
     min-height: auto;
-    padding: 130px 0 76px;
+    padding: 28px 0 76px;
+  }
+
+  .amobic-waitlist-logo {
+    width: 132px;
+    margin-bottom: 64px;
   }
 
   .amobic-waitlist-copy h1 {
