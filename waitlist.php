@@ -8,8 +8,8 @@
     <div class="container">
       <div class="amobic-waitlist-hero-grid">
         <div class="amobic-waitlist-copy wow animate__fadeInUp">
-
-          <h1>Cape Town's Most Anticipated Property & Lifestyle Platform</h1>
+        <span class="amobic-waitlist-kicker">Cape Town Launch • September 2026</span>
+          <h4>Cape Town's Most Anticipated Property & Lifestyle Platform</h4>
 
           <p>
             Be first. Early property owners and partners get guaranteed priority

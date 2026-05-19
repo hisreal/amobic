@@ -9597,3 +9597,24 @@ body {
     width: 100%;
   }
 }
+.amobic-waitlist-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.amobic-waitlist-copy p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.amobic-waitlist-actions {
+  justify-content: center;
+}
+
+.amobic-waitlist-proof {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
